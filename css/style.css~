@@ -1,0 +1,247 @@
+/********** Base styles **********/
+* {/** this property will apply to every element **/
+
+  box-sizing: border-box;  /**will keep the real size of the box size model **/
+
+}
+
+body {
+  
+  font-size: 14px;
+  color: #666;
+  background-color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.container{
+margin-left: 30px;
+
+}
+
+h1{
+ font-size: 22px;
+ font-weight: bold;
+}
+
+h2{
+ font-size: 18px;
+ font-weight: bold;
+}
+
+h3{
+ font-size: 16px;
+ font-weight: bold;
+}
+
+
+/** HEADER **/
+#header-nav {
+  background-color: #403F40;
+  height: 80px;
+  margin-left: 5px;
+  border-radius: 0;
+  border: 0;
+   
+}
+
+.navbar{
+ background-color: #add6c6;
+ 
+ 
+}
+.navbar-brand {
+  padding-top: 25px;
+  
+}
+
+.navbar-brand h1 { /* Website name */
+  font-family: 'Oxygen', sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #fff;
+  text-align: center;
+  background-color: #add6c6;
+}
+#nav-list a:hover {
+  background: #fcf8e3;
+  color: #111;
+  font-weight: bold;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #eee;
+  background-color: #74a696;
+  
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+
+/* END HEADER */
+
+/*"Our Menu" Title */
+.menuLabel {
+  
+  margin-bottom: 15px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  }
+/*END Our Menu Title */
+
+p{
+  color: #666;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  line-height: 2.3em;
+  word-break: break-all;
+    
+}
+
+.card {
+  position: relative;
+  background-color: #d9f5f7;
+  border: none;
+  float:left;
+  margin: 6px; 
+  height:100%;
+  clear: both;
+  display: inline-block;
+}
+
+
+.after-box{
+  clear:both;
+}
+
+
+
+.chicken{
+  background-color: #fcf6e3;
+}
+
+.beef{
+  background-color: #f2dede;
+}
+
+.sushi{
+  background-color: #f7e2d9;
+}
+
+
+
+  /* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	
+	.container{
+    margin-left: 60px;
+
+   }
+	
+	.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+	.navbar-brand h1 { /* Website name */
+    padding-top: 5px;
+    font-size: 28px;
+  }
+	.col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+	
+  .navbar-brand h1 { /* Website name */
+    padding-top: 5px;
+    font-size: 3vw;/* 1vw = 1% of viewport width */
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  
+  
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Website name */
+    padding-top: 10px;
+    font-size: 3vw; /* 1vw = 1% of viewport width */
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+   
+      
+  }
+  
+ 
+
+  #menu-tile, #specials-tile {
+    width: 660px;
+    margin: 0 auto 15px;
+  }
+  
+  .col-sm-12 {
+    width: 100%;
+  }
+  
+
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  
+  
+  .navbar-brand h1 { /* Website name */
+    padding-top: 5px;
+    font-size: 4vw;/* 1vw = 1% of viewport width */
+  }
+  
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+
